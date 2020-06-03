@@ -7,6 +7,8 @@
   var classNameDark = "theme--light";
   var classNameLight = "theme--dark";
 
+  document.addEventListener("touchstart", () => {}, true);
+
   function setClassOnDocumentBody(darkMode) {
     document.body.classList.add(darkMode ? classNameDark : classNameLight);
     document.body.classList.remove(darkMode ? classNameLight : classNameDark);
