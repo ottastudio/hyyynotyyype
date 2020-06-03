@@ -2,7 +2,7 @@
   "name": "Hyno Type",
   "short_name": "Hyno Type",
   "description": "An open source typography platform",
-  "display": "minimal-ui",
+  "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#adff2f",
   "background_color": "#F5F5F5",
