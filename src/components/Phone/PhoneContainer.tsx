@@ -18,12 +18,11 @@ export const PhoneContainer: React.FC<{}> = ({ children }) => {
         .phone-container {
           background-color: var(--background);
           position: relative;
-          padding: 0.5rem;
-          margin-top: 60px;
-          transition: margin 300ms cubic-bezier(1, 0, 0, 1);
+          padding: calc(60px + 0.5rem) 0.5rem 0.5rem 0.5rem;
+          transition: padding 300ms cubic-bezier(1, 0, 0, 1);
         }
         .phone-container-with-drawer {
-          margin-top: 50vh;
+          padding: calc(50vh + 0.5rem) 0.5rem 0.5rem 0.5rem;
         }
       `}</style>
     </>
