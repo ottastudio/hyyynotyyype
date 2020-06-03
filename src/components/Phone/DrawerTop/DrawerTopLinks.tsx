@@ -6,8 +6,6 @@ import {
   SECTION_ACCOUNT,
   SECTION_ETC,
 } from "../../../lib/misc";
-import { AccordionLinkProps } from "../../Desktop/Accordion/AccordionLink";
-import DotTyping from "../../Utils/Placeholders/DotTyping";
 
 export default () => {
   const {
