@@ -1,7 +1,7 @@
 import Head from "next/head";
+import { PageProps } from "../../global";
 
-export default ({ ...props }) => {
-  const { isMobile } = props;
+const Index: PageProps = ({ isMobile }) => {
   return (
     <>
       <Head>
@@ -11,3 +11,5 @@ export default ({ ...props }) => {
     </>
   );
 };
+
+export default Index;
