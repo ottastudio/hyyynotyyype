@@ -3,3 +3,6 @@ node_modules
 .next
 .now
 .env*
+
+**/public/workbox-*.js
+**/public/sw.js
