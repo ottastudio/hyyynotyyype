@@ -26,6 +26,7 @@ export default () => {
         <DrawerTopLinks />
         <DrawerTopToggleDarkMode />
         <DrawerTopHandle />
+        <div className={topDrawer ? "mask disapear" : "mask"} />
       </div>
 
       <style jsx>{`
@@ -45,6 +46,21 @@ export default () => {
         .open {
           transform: translateY(0%);
           box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+        .mask {
+          position: absolute;
+          bottom: 60px;
+          right: 0;
+          left: 0;
+          height: 100%;
+          z-index: 10;
+          background-color: inherit;
+          opacity: 1;
+          transition: opacity 300ms ease;
+          pointer-events: none;
+        }
+        .disapear {
+          opacity: 0;
         }
       `}</style>
     </>
