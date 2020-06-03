@@ -21,6 +21,7 @@ export default () => {
           <input
             id="dm-check"
             className="dm-check"
+            name="dm-check"
             type="checkbox"
             checked={value}
             onChange={value ? disable : enable}
