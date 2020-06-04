@@ -62,12 +62,12 @@ export default () => {
           flex-wrap: wrap;
           padding: 0.5rem 0rem 0rem 0.5rem;
           margin-bottom: 40px;
-          font-size: 2.3rem;
+          font-size: 2rem;
         }
         .drawer-top-link {
           display: inline-flex;
           align-items: center;
-          padding: 0rem 1.3rem;
+          padding: 0rem 1.3rem 0.2rem 1.3rem;
           height: 60px;
           border: 1px solid var(--lightgrey);
           border-radius: 5rem;
