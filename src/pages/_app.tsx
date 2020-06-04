@@ -59,6 +59,140 @@ export default class extends App<{ isMobile: boolean }> {
         </AppProvider>
 
         <style jsx global>{`
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-ExtraLight.otf") format("opentype"),
+              url("/static/fonts/Fracktif-ExtraLight.woff") format("woff"),
+              url("/static/fonts/Fracktif-ExtraLight.woff2") format("woff2");
+            font-style: normal;
+            font-display: swap;
+            font-weight: 200;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-ExtraLightItalic.otf")
+                format("opentype"),
+              url("/static/fonts/Fracktif-ExtraLightItalic.woff") format("woff"),
+              url("/static/fonts/Fracktif-ExtraLightItalic.woff2")
+                format("woff2");
+            font-style: italic;
+            font-display: swap;
+            font-weight: 200;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-Light.otf") format("opentype"),
+              url("/static/fonts/Fracktif-Light.woff") format("woff"),
+              url("/static/fonts/Fracktif-Light.woff2") format("woff2");
+            font-style: normal;
+            font-display: swap;
+            font-weight: 300;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-LightItalic.otf")
+                format("opentype"),
+              url("/static/fonts/Fracktif-LightItalic.woff") format("woff"),
+              url("/static/fonts/Fracktif-LightItalic.woff2") format("woff2");
+            font-style: italic;
+            font-display: swap;
+            font-weight: 300;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-Regular.otf") format("opentype"),
+              url("/static/fonts/Fracktif-Regular.woff") format("woff"),
+              url("/static/fonts/Fracktif-Regular.woff2") format("woff2");
+            font-style: normal;
+            font-display: swap;
+            font-weight: 400;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-RegularItalic.otf")
+                format("opentype"),
+              url("/static/fonts/Fracktif-RegularItalic.woff") format("woff"),
+              url("/static/fonts/Fracktif-RegularItalic.woff2") format("woff2");
+            font-style: italic;
+            font-display: swap;
+            font-weight: 400;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-Medium.otf") format("opentype"),
+              url("/static/fonts/Fracktif-Medium.woff") format("woff"),
+              url("/static/fonts/Fracktif-Medium.woff2") format("woff2");
+            font-style: normal;
+            font-display: swap;
+            font-weight: 500;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-MediumItalic.otf")
+                format("opentype"),
+              url("/static/fonts/Fracktif-MediumItalic.woff") format("woff"),
+              url("/static/fonts/Fracktif-MediumItalic.woff2") format("woff2");
+            font-style: italic;
+            font-display: swap;
+            font-weight: 500;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-SemiBold.otf") format("opentype"),
+              url("/static/fonts/Fracktif-SemiBold.woff") format("woff"),
+              url("/static/fonts/Fracktif-SemiBold.woff2") format("woff2");
+            font-style: normal;
+            font-display: swap;
+            font-weight: 600;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-SemiBoldItalic.otf")
+                format("opentype"),
+              url("/static/fonts/Fracktif-SemiBoldItalic.woff") format("woff"),
+              url("/static/fonts/Fracktif-SemiBoldItalic.woff2") format("woff2");
+            font-style: italic;
+            font-display: swap;
+            font-weight: 600;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-Bold.otf") format("opentype"),
+              url("/static/fonts/Fracktif-Bold.woff") format("woff"),
+              url("/static/fonts/Fracktif-Bold.woff2") format("woff2");
+            font-style: normal;
+            font-display: swap;
+            font-weight: 700;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-BoldItalic.otf") format("opentype"),
+              url("/static/fonts/Fracktif-BoldItalic.woff") format("woff"),
+              url("/static/fonts/Fracktif-BoldItalic.woff2") format("woff2");
+            font-style: italic;
+            font-display: swap;
+            font-weight: 700;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-ExtraBold.otf") format("opentype"),
+              url("/static/fonts/Fracktif-ExtraBold.woff") format("woff"),
+              url("/static/fonts/Fracktif-ExtraBold.woff2") format("woff2");
+            font-style: normal;
+            font-display: swap;
+            font-weight: 800;
+          }
+          @font-face {
+            font-family: "Fracktif";
+            src: url("/static/fonts/Fracktif-ExtraBoldItalic.otf")
+                format("opentype"),
+              url("/static/fonts/Fracktif-ExtraBoldItalic.woff") format("woff"),
+              url("/static/fonts/Fracktif-ExtraBoldItalic.woff2")
+                format("woff2");
+            font-style: italic;
+            font-display: swap;
+            font-weight: 800;
+          }
           :root {
             --background: #f5f5f5;
             --foreground: #202020;
@@ -78,9 +212,10 @@ export default class extends App<{ isMobile: boolean }> {
           body {
             margin: 0;
             padding: 0;
-            font-family: "Helvetica Neue", sans-serif;
+            font-family: "Fracktif", sans-serif;
             background-color: var(--background);
             color: var(--foreground);
+            font-feature-settings: "ss01";
             overscroll-behavior-y: none;
           }
 
