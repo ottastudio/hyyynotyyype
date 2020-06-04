@@ -16,7 +16,6 @@ export default class extends Document {
       <Html lang="en">
         <Head>
           <link rel="manifest" href="/manifest.json" />
-          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="description"
@@ -32,6 +31,8 @@ export default class extends Document {
             name="apple-mobile-web-app-status-bar-style"
             content="black-translucent"
           />
+
+          <meta name="theme-color" content="#8bde85" />
 
           <link
             rel="apple-touch-icon"
@@ -54,14 +55,18 @@ export default class extends Document {
           <link
             rel="mask-icon"
             href="/static/images/icons/safari-pinned-tab.svg"
-            color="#adff2f"
+            color="#8bde85"
           />
-          <meta name="msapplication-TileColor" content="#00aba9" />
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/static/images/icons/favicon.ico"
+          />
+          <meta name="msapplication-TileColor" content="#8bde85" />
           <meta
             name="msapplication-config"
             content="/static/images/icons/browserconfig.xml"
           />
-          <meta name="theme-color" content="#adff2f" />
 
           <link
             href="/static/images/splashscreens/iphone5_splash.png"
