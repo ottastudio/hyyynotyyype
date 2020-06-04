@@ -4,7 +4,7 @@
   "description": "An open source typography platform",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#adff2f",
+  "theme_color": "#8bde85",
   "background_color": "#F5F5F5",
   "start_url": "/",
   "scope": "/",
